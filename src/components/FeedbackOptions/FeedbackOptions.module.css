@@ -1,16 +1,22 @@
-.button {
+.btn {
     min-width: 100px;
     padding: 5px;
 text-align: center;
+font-weight: 600;
     border-radius: 40px;
     border-color: transparent;
     background-color: rgb(219, 219, 219);
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+    border: 1px solid #000000;
 }
 
 .good,
 .bad,
 .neutral {
-composes: button;
+composes: btn;
 }
 
 .good:hover, .good:focus{
