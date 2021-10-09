@@ -4,20 +4,19 @@ import s from './Section.module.css';
 function Section({ title, children }) {
   return (
     <section className={s.section}>
-      {title && <h2 className={s.title}>{title}</h2>}
+      <h2 className={s.title}>{title}</h2>
       {children}
     </section>
   );
 }
 
 Section.defaultProps = {
-  title: '',
+  title: 'hello',
 };
 
 Section.propTypes = {
-  title: PropTypes.string,
-  // children: PropTypes.node,
-  children: PropTypes.object.isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Section;
