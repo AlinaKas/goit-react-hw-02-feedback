@@ -1,5 +1,6 @@
-.title {
+.message {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 600;
     color: rgb(33, 5, 112);
 }
